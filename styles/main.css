@@ -111,7 +111,8 @@ html{
 
 #content .content-section{
     width: 1000px;
-    padding: 64px 0;
+    height: 100vh;
+    padding: 150px 0;
     margin-left: auto;
     margin-right: auto;
 }
