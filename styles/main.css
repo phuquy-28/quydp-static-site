@@ -5,20 +5,20 @@
     box-sizing: border-box;
 }
 
-.text-white{
+.text-white {
     color: #fff !important;
 }
 
-html{
-    font-family: Arial, Helvetica, sans-serif;
+html {
+    font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
 }
 
-#main{
+#main {
 
 }
 
-#header{
+#header {
     width: 100%;
     height: 46px;
     background-color: #000;
@@ -29,56 +29,59 @@ html{
     z-index: 1;
 }
 
-#nav{
+#nav {
     display: inline-block;
 }
 
-#nav li{
+#nav li {
     display: inline-block;
 }
 
-#nav li a{
+#nav li a {
     color: #fff;
     text-decoration: none;
     line-height: 46px;
     padding: 0 24px;
     display: inline-block;
+    transition: all .2s;
 }
 
-#nav li:hover a{
-    color:#000;
+#nav li:hover a {
+    color: #000;
     background-color: #fff;
+    border-radius: 5px;
 }
 
-#header .search-btn{
+#header .search-btn {
     float: right;
     padding: 0 21px;
     cursor: pointer;
 }
 
-#header .search-btn:hover{
+#header .search-btn:hover {
     color: #fff;
     background-color: #f44366;
 }
 
-#header .search-icon{
+#header .search-icon {
     color: #fff;
     font-size: 20px;
     line-height: 46px;
 }
 
-#slider{
-    margin-top: 46px;
-    padding-top: 47%;
+#slider {
+    height: 100vh;
+    /* margin-top: 46px; */
+    /* padding-top: 47%; */
     background-image: url("/images/background.jpg");
     background-position: center center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: cover;
     /*background: url('slider1.jpg') center center / cover no-repeat;*/
     position: relative;
 }
 
-#slider .text-content{
+#slider .text-content {
     position: absolute;
     bottom: 20%;
     color: #fff;
@@ -87,7 +90,7 @@ html{
     text-align: center;
 }
 
-#slider .text-heading{
+#slider .text-heading {
     /* font-weight: 500; */
     font-size: 30px;
     letter-spacing: 4px;
@@ -98,33 +101,49 @@ html{
     color: #fff;
     padding: 0.3em 0.63em;
     border: 2px solid #fffa;
+
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    /* animation: typing 4s, cursor .4s step-end infinite alternate; */
 }
 
-#slider .text-desc{
+/* typing effect */
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+#slider .text-desc {
     font-size: 18px;
     margin-top: 25px;
 }
 
-#content{
-
+#content {
+    
 }
 
-#content .content-section{
+#content .content-section {
     width: 1000px;
     height: 100vh;
-    padding: 150px 0;
+    padding: 92px 0;
     margin-left: auto;
     margin-right: auto;
 }
 
-#content .section-heading{
+#content .section-heading {
     text-align: center;
     font-size: 30px;
     letter-spacing: 4px;
     margin-bottom: 25px;
 }
 
-#content .about-section{
+#content .about-section {
     line-height: 1.4;
     letter-spacing: 2px;
     font-size: 20px;
@@ -133,44 +152,51 @@ html{
 }
 
 /*Assignment section*/
-.assingment-section{
+.assingment-section {
     background-color: #000;
 }
 
 /* Assignment */
-.assingment-list{
+.assingment-list {
     margin: 32px -8px 48px;
 }
-.assignment-item{
+
+.assignment-item {
     float: left;
     width: 25%;
     padding: 8px 8px;
 }
-.assignment-img{
+
+.assignment-img {
     width: 100%;
     height: 238px;
     display: block;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-.assignment-img:hover{
+
+.assignment-img:hover {
     opacity: 0.8;
 }
-.assignment-body{
+
+.assignment-body {
     background-color: #fff;
     padding: 4px;
     font-size: 15px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.assignment-heading{
+
+.assignment-heading {
     font-size: 21px;
     margin-top: 4px;
 }
-.assignment-desc{
+
+.assignment-desc {
     line-height: 1.6;
 }
-.view-bnt{
+
+.view-bnt {
     color: #fff;
     background-color: #000;
     text-decoration: none;
@@ -180,34 +206,35 @@ html{
     margin-top: 4px;
     border-radius: 10px;
 }
-.view-bnt:hover{
+
+.view-bnt:hover {
     color: #000;
     background-color: #ccc;
 }
-.clear{
+
+.clear {
     clear: both;
 }
 
-#footer{
+#footer {
     padding: 64px 16px;
     text-align: center;
 
 }
 
-#footer .social-list{
+#footer .social-list {
     font-size: 24px;
 }
 
-#footer .social-list a{
+#footer .social-list a {
     color: rgba(0, 0, 0, 0.6);
     text-decoration: none;
 }
 
-#footer .social-list a:hover{
+#footer .social-list a:hover {
     color: rgba(0, 0, 0, 0.3);
 }
 
-#footer .copy-right{
+#footer .copy-right {
     margin-top: 15px;
 }
-
