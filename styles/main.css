@@ -71,13 +71,10 @@ html {
 
 #slider {
     height: 100vh;
-    /* margin-top: 46px; */
-    /* padding-top: 47%; */
     background-image: url("/images/background.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    /*background: url('slider1.jpg') center center / cover no-repeat;*/
     position: relative;
 }
 
@@ -91,7 +88,6 @@ html {
 }
 
 #slider .text-heading {
-    /* font-weight: 500; */
     font-size: 30px;
     letter-spacing: 4px;
     font-weight: bold;
@@ -128,6 +124,87 @@ html {
     
 }
 
+
+
+#about{
+    width: 100vw;
+    height: 100vh;
+    padding: 60px 0;
+}
+
+#about .about-section{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#about img{
+    width: 360px;
+    height: auto;
+    border-radius: 50px;
+    opacity: .9;
+}
+
+#about .about-text{
+    max-width: 550px;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    text-align: justify;
+}
+
+#about .about-text h1{
+    color: #000;
+    font-size: 35px;
+    text-transform: capitalize;
+}
+
+#about .about-text h5{
+    color: #333;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+}
+
+span{
+    color: #f9004d;
+}
+
+#about .about-text p{
+    color: #333;
+    letter-spacing: 1.4;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 22px;
+    opacity: .8;
+}
+
+.about-text button{
+    background-color: #f9004d;
+    color: whilte;
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.about-text button:hover{
+    background: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+/*Assignment section*/
+.assingment-section {
+    background-color: #000;
+}
+
 #content .content-section {
     width: 1000px;
     height: 100vh;
@@ -138,25 +215,11 @@ html {
 
 #content .section-heading {
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
     letter-spacing: 4px;
     margin-bottom: 25px;
 }
 
-#content .about-section {
-    line-height: 1.4;
-    letter-spacing: 2px;
-    font-size: 20px;
-    opacity: 0.8;
-    text-align: justify;
-}
-
-/*Assignment section*/
-.assingment-section {
-    background-color: #000;
-}
-
-/* Assignment */
 .assingment-list {
     margin: 32px -8px 48px;
 }
@@ -182,13 +245,13 @@ html {
 .assignment-body {
     background-color: #fff;
     padding: 4px;
-    font-size: 15px;
+    font-size: 18px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
 .assignment-heading {
-    font-size: 21px;
+    font-size: 25px;
     margin-top: 4px;
 }
 
@@ -204,18 +267,24 @@ html {
     display: inline-block;
     cursor: pointer;
     margin-top: 4px;
+    border: 2px solid transparent;
     border-radius: 10px;
+    transition: .4s;
 }
 
 .view-bnt:hover {
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid #000;
+    cursor: pointer;
     color: #000;
-    background-color: #ccc;
 }
 
 .clear {
     clear: both;
 }
 
+/* Footer section */
 #footer {
     padding: 64px 16px;
     text-align: center;
