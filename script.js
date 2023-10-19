@@ -9,3 +9,29 @@ function startTypingAnimation() {
 }
 
 startTypingAnimation(); // Bắt đầu ban đầu
+
+var animationEls = document.querySelectorAll('.show-on-scroll')
+
+function toggleAnimationEl(element){
+    var rect = element.getClientRects()[0]
+    var heightScreen = window.innerHeight
+
+    //check whether on screen or not
+    if(!(rect.bottom < 0 || rect.top > heightScreen)){
+        // on screen
+        element.classList.add('start')
+    }else{
+        // out screen
+        element.classList.remove('start')
+    }
+}
+
+function checkAnimation(){
+
+    animationEls.forEach(el => {
+        toggleAnimationEl(el)
+    })
+
+}
+
+window.onscroll = checkAnimation
