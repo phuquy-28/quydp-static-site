@@ -431,7 +431,7 @@ textarea::-webkit-scrollbar-thumb{
 
 .left-to-right {
     transform: translateX(-200%);
-    transition: 2s;
+    transition: 1s;
 }
 
 .left-to-right.start {
